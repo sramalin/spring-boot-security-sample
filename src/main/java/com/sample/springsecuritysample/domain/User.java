@@ -1,4 +1,4 @@
-package com.rd.domain;
+package com.sample.springsecuritysample.domain;
 
 import org.hibernate.validator.constraints.Email;
 

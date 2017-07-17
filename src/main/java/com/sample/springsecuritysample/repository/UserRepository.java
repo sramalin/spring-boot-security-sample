@@ -1,6 +1,6 @@
-package com.rd.repository;
+package com.sample.springsecuritysample.repository;
 
-import com.rd.domain.User;
+import com.sample.springsecuritysample.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

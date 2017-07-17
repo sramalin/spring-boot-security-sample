@@ -1,4 +1,4 @@
-package com.rd.controller;
+package com.sample.springsecuritysample.controller;
 
 import org.apache.tomcat.util.net.jsse.openssl.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloWorldController {
 
 
-
     @RequestMapping(value = "/adminhomepage", method = RequestMethod.GET)
     public String getHomePage(Model model) {
 
@@ -22,15 +21,31 @@ public class HelloWorldController {
         String name = auth.getName(); //get logged in username
 
 
-        model.addAttribute("LoggedInUser",name);
+        model.addAttribute("LoggedInUser", name);
         return "myhomepage";
 
     }
 
     @RequestMapping(value = "/userhomepage", method = RequestMethod.GET)
-    public String getUserHomePage() {
+    public String getUserHomePage(Model model) {
 
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+
+
+        model.addAttribute("LoggedInUser", name);
         return "userhomepage";
+
+    }
+
+    @RequestMapping(value = "/secondpage", method = RequestMethod.GET)
+    public String getUserSecondPage(Model model) {
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName(); //get logged in username
+
+        model.addAttribute("LoggedInUser", name);
+
+        return "secondpage";
 
     }
 

@@ -1,12 +1,12 @@
-package com.rd;
+package com.sample.springsecuritysample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootOauth2Application {
+public class SpringBootSecuritySample {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootOauth2Application.class, args);
+        SpringApplication.run(SpringBootSecuritySample.class, args);
     }
 }

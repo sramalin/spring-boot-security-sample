@@ -1,4 +1,4 @@
-package com.rd.security;
+package com.sample.springsecuritysample.security;
 
 public enum Authorities {
 

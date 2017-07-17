@@ -1,4 +1,4 @@
-package com.rd.domain;
+package com.sample.springsecuritysample.domain;
 
 public class Greeting {
 

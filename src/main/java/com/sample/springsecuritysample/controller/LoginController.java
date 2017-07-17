@@ -1,4 +1,4 @@
-package com.rd.controller;
+package com.sample.springsecuritysample.controller;
 
 /**
  * Created by sramalin on 14/07/17.

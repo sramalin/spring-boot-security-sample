@@ -1,4 +1,4 @@
-package com.rd.domain;
+package com.sample.springsecuritysample.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

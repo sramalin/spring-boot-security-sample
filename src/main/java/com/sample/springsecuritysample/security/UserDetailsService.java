@@ -1,8 +1,8 @@
-package com.rd.security;
+package com.sample.springsecuritysample.security;
 
-import com.rd.domain.Authority;
-import com.rd.domain.User;
-import com.rd.repository.UserRepository;
+import com.sample.springsecuritysample.domain.Authority;
+import com.sample.springsecuritysample.domain.User;
+import com.sample.springsecuritysample.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
